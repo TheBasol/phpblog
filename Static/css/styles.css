@@ -1,0 +1,311 @@
+@import "icons.css";
+@import "mediaquerys.css";
+
+:root{
+    --primary: #2EB0B4;
+    --secondary: #9ED6AD;
+    --lighting: #E2E2BC;
+    --night: #51434A;
+    --background: #ecebeb;
+    --warning: #FF4521;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Index */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary);
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.nav .navbar{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu_bar{
+    display: none;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.btn{
+    padding: .6rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--warning);
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: 0 -5px 5px -5px rgb(109, 108, 108);
+}
+
+.hero .btn{
+    font-size: 1.2rem;
+}
+
+.hero .container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 1rem;
+    color: #fff;
+}
+
+.hero .title{
+    font-size: 3.6rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    padding: 1rem;
+    background-color: var(--secondary);
+    box-shadow: 0 -5px 5px -5px #333;
+}
+
+/* Final index */
+
+
+/* Inicio Register */
+
+.hero .form, 
+.form_login{
+    padding: 3rem 1.4rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form .container_input, 
+.form_login .container_input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input{
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border:none;
+    border-bottom:1px solid #000;
+    background-color: transparent;
+}
+
+label{
+    position: absolute;
+    top: -1.4em;
+    left: 3.4rem;
+    opacity: 1;
+    transition: all 0.3s;
+    color: black;
+    display: block;
+}
+
+input:placeholder-shown + label{
+    top: 12px;
+    left: 12px;
+    opacity: 0;
+    display: none;
+}
+
+.form .btn{
+    color: var(--night);
+    background-color: var(--secondary);
+}
+
+/* Final Register */
+
+/* Inicio Login */
+
+.form_login .btn{
+    background-color: var(--primary);
+}
+
+/* Final Login */
+
+/* Inicio Profile*/
+
+.main .hero{
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+    padding-top: 40px;
+    width: auto;
+    height: 80vh;
+    background-image: url("../images/background_profile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero .profile_title{
+    color: #fff;
+}
+
+.container_profile{
+    display: flex;
+    padding: 2rem;
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.container_profile .body{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    width: 60%;
+    flex-direction: column;
+    font-weight: lighter;
+}
+
+.container_profile .body h2{
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+.container_profile .body p{
+    letter-spacing: 2px;
+}
+
+.article_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 284px;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.card p{
+    text-align: start;
+    padding: 1rem 1.4rem;
+    font-weight: lighter;
+}
+
+.img_container{
+    height: 50%;
+    width: 100%;
+}
+
+.img_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+	transition: .3s ease-in-out;
+}
+
+.img_container img:hover{
+    opacity: 50%;
+}
+
+.title_card{
+    margin-top: 10px;
+    padding: 0 1.4rem;
+    align-self: flex-start;
+    color: #000;
+}
+
+.profile_img{
+    top: 160px;
+    left: 200px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.profile_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.card .btn{
+    margin: 0 1.4rem;
+    align-self: flex-start;
+}
+
+
+/* Final Profile */
+
+/* Inicio Articles */
+
+.main_article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--background);
+}
+
+.main_article .article_container{
+    width: 80%;
+}
+
+.article_container .btn{
+    background-color: var(--primary);
+}
+
+.article_container .more{
+    font-size: 1rem;
+    background-color: #078488;
+}
+
+/* Final Articles */

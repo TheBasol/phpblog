@@ -1,0 +1,31 @@
+.icon{
+    width: 42px;
+    height: 42px;
+}
+
+.logo{
+    background: url('https://api.iconify.design/simple-icons/microdotblog.svg?color=white') no-repeat center center / contain;
+    width: 36px;
+    height: 36px;
+}
+
+.register_user{
+    background: url('https://api.iconify.design/carbon/user-avatar-filled.svg?color=%2351434a') no-repeat center center / contain;
+}
+
+.email{
+    background: url('https://api.iconify.design/ic/round-email.svg?color=%2351434a') no-repeat center center / contain;
+}
+
+.password{
+    background: url('https://api.iconify.design/bxs/lock-open.svg?color=%2351434a') no-repeat center center / contain;
+}
+
+.password_check{
+    background: url('https://api.iconify.design/bi/shield-lock-fill.svg?color=%2351434a') no-repeat center center / contain;
+}
+
+.menu_icon{
+    background: url('https://api.iconify.design/heroicons-solid/menu-alt-2.svg?color=white') no-repeat center center / contain;
+    cursor: pointer;
+}

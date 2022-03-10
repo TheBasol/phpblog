@@ -1,0 +1,36 @@
+@media screen and (max-width:811px){
+
+    .menu_bar{
+        display: block !important;
+    }
+
+    .nav .navbar{
+        position: absolute;
+        top: 68px;
+        right: 0;
+        display: flex;
+        padding: 2rem;
+        z-index: 1;
+        flex-direction: column;
+        background-color: inherit;
+        transform: translateY(-280%);
+        transition: all 1.4s;
+    }
+
+    .nav .menu-toggle {
+        transform: translateY(0%);
+    }
+
+
+    .hero .container{
+        display: flex;
+        align-items: center !important;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero .title{
+        font-size: 2.4rem !important;
+    }
+}
