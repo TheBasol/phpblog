@@ -1,0 +1,13 @@
+RewriteEngine On
+
+ErrorDocument 401 /phpblog-main/error
+ErrorDocument 403 /phpblog-main/error
+ErrorDocument 404 /phpblog-main/error
+ErrorDocument 500 /phpblog-main/error
+
+RewriteRule ^error /phpblog-main/error.php
+RewriteRule ^inicio /phpblog-main/index.php
+RewriteRule ^registro /phpblog-main/views/register.php
+RewriteRule ^login /phpblog-main/views/login.php
+RewriteRule ^articulos /phpblog-main/views/articles.php
+RewriteRule ^perfil /phpblog-main/views/profile.php
